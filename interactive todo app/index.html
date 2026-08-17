@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Interactive To-Do List</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>My To-Do List</h1>
+        <p class="subtitle">Add and manage your daily tasks</p>
+
+        <!-- Task Form -->
+        <form id="taskForm">
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter a task..."
+                required
+            >
+
+            <button type="submit">Add Task</button>
+
+        </form>
+
+        <!-- Task Counter -->
+        <div class="task-info">
+            <span id="taskCount">0 tasks</span>
+        </div>
+
+        <!-- Tasks will appear here -->
+        <ul id="taskList"></ul>
+
+    </div>
+
+    <!-- Connect JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
