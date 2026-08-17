@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CrazyStore - Product Page</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">CrazyStore</div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <div class="cart">
+            🛒 Cart <span id="cart-count">0</span>
+        </div>
+    </header>
+
+
+    <!-- Main Product Section -->
+    <main class="product-container">
+
+        <!-- Product Image -->
+        <div class="product-image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyjnLOIPQE96m1l14A9KyaQoywCXb3LTddUpIq0TVofw&s=10"
+                 alt="Running Shoes">
+        </div>
+
+
+        <!-- Product Details -->
+        <div class="product-details">
+
+            <p class="category">SPORTS SHOES</p>
+
+            <h1>Premium Running Shoes</h1>
+
+            <div class="rating">
+                ⭐⭐⭐⭐⭐
+                <span>(120 Reviews)</span>
+            </div>
+
+            <h2 class="price">₹2,499</h2>
+
+            <p class="description">
+                Comfortable and stylish running shoes designed for
+                everyday use, workouts, walking and running.
+                Lightweight design provides excellent comfort
+                throughout the day.
+            </p>
+
+
+            <!-- Size Selection -->
+            <div class="option">
+                <h3>Select Size</h3>
+
+                <button class="size">6</button>
+                <button class="size">7</button>
+                <button class="size">8</button>
+                <button class="size">9</button>
+                <button class="size">10</button>
+            </div>
+
+
+            <!-- Quantity -->
+            <div class="quantity">
+                <h3>Quantity</h3>
+
+                <button onclick="decreaseQuantity()">−</button>
+
+                <span id="quantity">1</span>
+
+                <button onclick="increaseQuantity()">+</button>
+            </div>
+
+
+            <!-- Add To Cart -->
+            <button class="add-cart" onclick="addToCart()">
+                Add to Cart
+            </button>
+
+            <p id="message"></p>
+
+        </div>
+
+    </main>
+   <!-- More Products -->
+<section class="more-products">
+
+    <h2>More Products</h2>
+
+    <div class="product-grid">
+
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/31GSWAQnt2L._SY300_SX300_QL70_FMwebp_.jpg"
+                 alt="Apple 2026 MacBook Pro Laptop">
+
+            <h3>Apple Laptop</h3>
+
+            <p>₹5,06,200</p>
+
+            <button onclick="addProductToCart()">
+                Add to Cart
+            </button>
+        </div>
+
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
+                 alt="Headphones">
+
+            <h3>Wireless Headphones</h3>
+
+            <p>₹1,999</p>
+
+            <button onclick="addProductToCart()">
+                Add to Cart
+            </button>
+        </div>
+
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30"
+                 alt="Smart Watch">
+
+            <h3>Smart Watch</h3>
+
+            <p>₹3,499</p>
+
+            <button onclick="addProductToCart()">
+                Add to Cart
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- Features -->
+    <section class="features">
+
+        <div class="feature">
+            <div>🚚</div>
+            <h3>Free Delivery</h3>
+            <p>Free delivery on orders above ₹999</p>
+        </div>
+
+        <div class="feature">
+            <div>🔄</div>
+            <h3>Easy Returns</h3>
+            <p>7-day easy return policy</p>
+        </div>
+
+        <div class="feature">
+            <div>🔒</div>
+            <h3>Secure Payment</h3>
+            <p>100% secure payment</p>
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 ShopNow. All Rights Reserved.</p>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script>
+
+        let quantity = 1;
+        let cartCount = 0;
+
+
+        function increaseQuantity() {
+
+            quantity++;
+
+            document.getElementById("quantity").innerText = quantity;
+        }
+
+
+        function decreaseQuantity() {
+
+            if (quantity > 1) {
+
+                quantity--;
+
+                document.getElementById("quantity").innerText = quantity;
+            }
+        }
+
+
+        function addToCart() {
+
+            cartCount += quantity;
+
+            document.getElementById("cart-count").innerText = cartCount;
+
+            document.getElementById("message").innerText =
+                "✓ Product added to cart successfully!";
+        }
+
+    </script>
+
+</body>
+
+</html>
