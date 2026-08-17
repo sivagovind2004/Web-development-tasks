@@ -1,0 +1,94 @@
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Navigation bar */
+nav {
+    background-color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* Website name */
+nav h2 {
+    color: white;
+}
+
+
+/* Navigation list */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+
+/* Navigation items */
+nav ul li {
+    margin-left: 25px;
+}
+
+
+/* Navigation links */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+/* Hover effect */
+nav ul li a:hover {
+    color: #00bcd4;
+}
+
+
+/* Website sections */
+section {
+    min-height: 100vh;
+    padding: 100px 50px;
+    text-align: center;
+}
+
+
+/* Section headings */
+section h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
+/* Section paragraphs */
+section p {
+    font-size: 20px;
+}
+
+
+/* Different section backgrounds */
+#home {
+    background-color: #f2f2f2;
+}
+
+#about {
+    background-color: #e3f2fd;
+}
+
+#services {
+    background-color: #e8f5e9;
+}
+
+#contact {
+    background-color: #fff3e0;
+}
+html {
+    scroll-behavior: smooth;
+}
