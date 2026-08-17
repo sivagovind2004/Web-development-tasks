@@ -1,0 +1,872 @@
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+
+    --yellow: #d9df00;
+
+    --dark: #181818;
+
+    --gray: #999999;
+
+    --light-gray: #e9e7e0;
+
+    --background: #f8f6ed;
+
+    --white: #ffffff;
+
+}
+
+
+/* =====================================================
+   BODY
+===================================================== */
+
+body {
+
+    font-family: "Poppins", sans-serif;
+
+    background: var(--background);
+
+    color: var(--dark);
+
+}
+
+
+/* =====================================================
+   MAIN PORTFOLIO
+===================================================== */
+
+.portfolio {
+
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 35px;
+
+    display: grid;
+
+    grid-template-columns: 34% 66%;
+
+    gap: 35px;
+
+}
+
+
+/* =====================================================
+   HEADINGS
+===================================================== */
+
+h1 {
+
+    font-size: 40px;
+
+    line-height: 0.95;
+
+    font-weight: 500;
+
+    margin-top: 25px;
+
+}
+
+
+h1 strong {
+
+    font-weight: 800;
+
+}
+
+
+h2 {
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+    margin-bottom: 12px;
+
+}
+
+
+h3 {
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+}
+
+
+p {
+
+    font-size: 9px;
+
+    line-height: 1.6;
+
+}
+
+
+/* =====================================================
+   LEFT PROFILE
+===================================================== */
+
+.profile-area {
+
+    position: relative;
+
+    padding-top: 20px;
+
+    min-height: 245px;
+
+}
+
+
+.profile-image {
+
+    position: relative;
+
+    z-index: 3;
+
+    width: 155px;
+
+    height: 155px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    display: block;
+
+    margin-left: 15px;
+
+    filter: grayscale(100%);
+
+}
+
+
+/* Yellow shapes */
+
+.yellow-shape {
+
+    position: absolute;
+
+    width: 70px;
+
+    height: 70px;
+
+    background: var(--yellow);
+
+    border-radius: 10px;
+
+    z-index: 1;
+
+}
+
+
+.shape-one {
+
+    top: 15px;
+
+    left: 0;
+
+}
+
+
+.shape-two {
+
+    top: 15px;
+
+    left: 125px;
+
+}
+
+
+/* =====================================================
+   STATUS
+===================================================== */
+
+.available {
+
+    margin-top: 5px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+}
+
+
+.available span {
+
+    background: var(--dark);
+
+    color: white;
+
+    width: 18px;
+
+    height: 18px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+/* =====================================================
+   LEFT SECTIONS
+===================================================== */
+
+.side-section {
+
+    margin-top: 28px;
+
+}
+
+
+/* =====================================================
+   EDUCATION
+===================================================== */
+
+.education-card {
+
+    background: var(--light-gray);
+
+    border-radius: 8px;
+
+    padding: 15px;
+
+}
+
+
+.timeline-item {
+
+    border-left: 3px solid var(--yellow);
+
+    padding-left: 12px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.timeline-item:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+.date {
+
+    display: inline-block;
+
+    background: var(--yellow);
+
+    padding: 3px 7px;
+
+    border-radius: 4px;
+
+    font-size: 7px;
+
+    font-weight: 700;
+
+    margin-bottom: 5px;
+
+}
+
+
+.timeline-item p {
+
+    color: #555;
+
+}
+
+
+/* =====================================================
+   SKILLS
+===================================================== */
+
+.skills-card {
+
+    background: var(--light-gray);
+
+    border-radius: 8px;
+
+    padding: 15px;
+
+}
+
+
+.skill {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin-bottom: 14px;
+
+}
+
+
+.skill:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+.skill-name {
+
+    width: 55px;
+
+    font-size: 8px;
+
+    font-weight: 500;
+
+}
+
+
+.skill-icon {
+
+    width: 20px;
+
+    height: 20px;
+
+    border-radius: 4px;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+}
+
+
+/* Java */
+
+.java {
+
+    background: #5382a1;
+
+}
+
+
+/* CSS */
+
+.css {
+
+    background: #2965f1;
+
+}
+
+
+/* Python */
+
+.python {
+
+    background: #3776ab;
+
+}
+
+
+/* Editing */
+
+.editing {
+
+    background: #222;
+
+}
+
+
+/* =====================================================
+   SKILL BAR
+===================================================== */
+
+.bar {
+
+    height: 8px;
+
+    flex: 1;
+
+    background: #999;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+}
+
+
+.progress {
+
+    height: 100%;
+
+    background: var(--yellow);
+
+    border-radius: 20px;
+
+}
+
+
+.percentage {
+
+    width: 25px;
+
+    font-size: 7px;
+
+    font-weight: 600;
+
+    text-align: right;
+
+}
+
+
+/* =====================================================
+   RIGHT CONTENT
+===================================================== */
+
+.content {
+
+    min-width: 0;
+
+}
+
+
+/* =====================================================
+   TOP GRID
+===================================================== */
+
+.top-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 40px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.portfolio-links {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+.portfolio-links strong {
+
+    display: block;
+
+    font-size: 10px;
+
+}
+
+
+.portfolio-links a {
+
+    font-size: 8px;
+
+    color: #2672a8;
+
+    text-decoration: none;
+
+}
+
+
+.qr {
+
+    width: 42px;
+
+    height: 42px;
+
+    object-fit: cover;
+
+}
+
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.contact-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+}
+
+
+.contact-list div {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    font-size: 8px;
+
+}
+
+
+.contact-list i {
+
+    width: 18px;
+
+    height: 18px;
+
+    border-radius: 50%;
+
+    background: var(--dark);
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 8px;
+
+}
+
+
+/* =====================================================
+   CONTENT SECTIONS
+===================================================== */
+
+.content-section {
+
+    margin-bottom: 20px;
+
+}
+
+
+.content-card {
+
+    background: var(--light-gray);
+
+    border-radius: 8px;
+
+    padding: 15px;
+
+}
+
+
+/* =====================================================
+   PROFILE
+===================================================== */
+
+.profile-card p {
+
+    font-size: 9px;
+
+}
+
+
+/* =====================================================
+   EXPERIENCE
+===================================================== */
+
+.experience {
+
+    margin-bottom: 12px;
+
+}
+
+
+.experience:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+.experience-header {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.experience-header span:not(.job-date) {
+
+    font-size: 8px;
+
+    color: #555;
+
+}
+
+
+.job-date {
+
+    flex-shrink: 0;
+
+    background: var(--yellow);
+
+    padding: 4px 8px;
+
+    border-radius: 10px;
+
+    font-size: 7px;
+
+    font-weight: 600;
+
+}
+
+
+.experience p {
+
+    font-size: 8px;
+
+}
+
+
+/* =====================================================
+   HOBBIES
+===================================================== */
+
+.hobbies {
+
+    display: flex;
+
+    justify-content: space-around;
+
+    align-items: center;
+
+    text-align: center;
+
+}
+
+
+.hobby {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 7px;
+
+}
+
+
+.hobby-icon {
+
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: 50%;
+
+    background: var(--yellow);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 18px;
+
+}
+
+
+.hobby span {
+
+    font-size: 8px;
+
+}
+
+
+/* =====================================================
+   SOCIAL MEDIA
+===================================================== */
+
+.socials {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+}
+
+
+.socials a {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    text-decoration: none;
+
+    color: #333;
+
+    font-size: 8px;
+
+}
+
+
+.socials i {
+
+    width: 18px;
+
+    font-size: 15px;
+
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 800px) {
+
+    .portfolio {
+
+        grid-template-columns: 1fr;
+
+        max-width: 650px;
+
+        padding: 25px;
+
+    }
+
+
+    .sidebar {
+
+        padding-right: 0;
+
+    }
+
+
+    .profile-area {
+
+        text-align: center;
+
+    }
+
+
+    .profile-image {
+
+        margin: auto;
+
+    }
+
+
+    .available {
+
+        justify-content: center;
+
+    }
+
+
+    .top-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 500px) {
+
+    .portfolio {
+
+        padding: 18px;
+
+        display: block;
+
+    }
+
+
+    h1 {
+
+        font-size: 34px;
+
+    }
+
+
+    .top-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+    }
+
+
+    .experience-header {
+
+        flex-direction: column;
+
+    }
+
+
+    .skill-name {
+
+        width: 60px;
+
+    }
+
+}
